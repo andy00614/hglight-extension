@@ -28,6 +28,7 @@ const style = {
         position: relative;
         left: -15px;
         visibile: hidden;
+        border-radius: 4px;
     `
 }
 
