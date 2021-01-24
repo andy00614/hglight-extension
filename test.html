@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><span style="font-family: 宋体">二、事件流</span></p>
+    <p>
+      以上内容见：<a
+        title="javaScript事件（一）"
+        name="a"
+        href="http://www.cnblogs.com/starof/p/4066381.html"
+        target="_blank"
+        >javaScript事件（一）事件流</a
+      >
+    </p>
+    <p class="p0">三、事件处理程序</p>
+    <p class="p0">四、IE事件处理程序</p>
+    <p>
+      以上内容见<a
+        href="http://www.cnblogs.com/starof/p/4067121.html"
+        target="_blank"
+        >javaScript事件（二）事件处理程序</a
+      >
+    </p>
+    <p>五、事件对象</p>
+    <p>
+      以上内容见<a
+        href="http://www.cnblogs.com/starof/p/4077532.html"
+        target="_new"
+        >javaScript事件（三）事件对象</a
+      >
+    </p>
+    <p>六、事件对象的公共成员</p>
+    <p>
+      以上内容见<a
+        id="cb_post_title_url"
+        href="http://www.cnblogs.com/starof/p/4096198.html"
+        target="_blank"
+        >javaScript事件（四）event的公共成员（属性和方法）</a
+      >
+    </p>
+    <h1>七、鼠标事件</h1>
+    <p>DOM3级事件中定义了9个鼠标事件。</p>
+    <ul>
+      <li>
+        mousedown:鼠标按钮被按下（左键或者右键）时触发。不能通过键盘触发。
+      </li>
+      <li>mouseup:鼠标按钮被释放弹起时触发。不能通过键盘触发。</li>
+      <li>
+        click:单击鼠标<strong>左键</strong>或者按下回车键时触发。这点对确保易访问性很重要，意味着onclick事件处理程序既可以通过键盘也可以通过鼠标执行。
+      </li>
+      <li>dblclick:双击鼠标<strong>左键</strong>时触发。</li>
+      <li>mouseover:鼠标移入目标元素上方。鼠标移到其后代元素上时会触发。</li>
+      <li>mouseout:鼠标移出目标元素上方。</li>
+      <li>
+        mouseenter:鼠标移入元素范围内触发，<strong>该事件不冒泡</strong>，即鼠标移到其后代元素上时不会触发。
+      </li>
+      <li>
+        mouseleave:鼠标移出元素范围时触发，<strong>该事件不冒泡</strong>，即鼠标移到其后代元素时不会触发。
+      </li>
+      <li>mousemove:鼠标在元素内部移到时不断触发。不能通过键盘触发。</li>
+    </ul>
+    <p>
+      <span style="color: rgba(255, 0, 0, 1)"><strong>note</strong></span
+      >:
+    </p>
+    <p>
+      在一个元素上相继触发mousedown和mouseup事件，才会触发click事件。两次click事件相继触发才会触发dblclick事件。
+    </p>
+    <p>
+      如果取消
+      了mousedown或mouseup中的一个，click事件就不会被触发。直接或间接取消了click事件，dblclick事件就不会被触发了。
+    </p>
+    <h2>1、事件触发的顺序</h2>
+    <p>举例：通过双击按钮，看一下上面触发的事件。</p>
+  </body>
+  <script src="./inject.js"></script>
+</html>
